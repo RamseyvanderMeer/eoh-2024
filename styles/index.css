@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "Mokoto";
+    src: url("/assets/fonts/Mokoto Glitch.otf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: absolute;
+    /* background-color: #f4f4f4; */
+    background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#home-top-video:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(176, 65, 62, 0.8), rgba(176, 65, 62, 0.8));
+}
+
+#home-top-video {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+}
+
+#home-info-panel img {
+    filter: invert(100%) sepia(1%) saturate(7463%) hue-rotate(278deg) brightness(120%) contrast(101%);
+    width: 50px;
+    height: 50px;
+}
+
+#home-info-panel div {
+    margin-top: 10px;
+}
+
+
+/*#main-video::after {
+    /* background: #67B9FC;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 0, 255, 0.2);
+}*/
+
+.main-content {
+    min-height: calc(100vh - 14.5rem);
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        min-height: calc(100vh - 13.5rem);
+    }
+}
+
+.uiuc-map {
+    width: 300px;
+    height: 196px;
+}
+
+@media (min-width: 700px) {
+    .uiuc-map {
+        width: 500px;
+        height: 327px;
+    }
+}
+
+.section {
+    content: "";
+    display: block;
+    height: 80px;
+    margin: -80px 0 0;
+}
+
+@media (min-width: 1024px) {
+    /* tailwind lg */
+    .section {
+        content: "";
+        display: block;
+        height: 64px;
+        margin: -64px 0 0;
+    }
+}
+
+.footer-bg {
+    background-color: #473335;
+}
+
+.text-theme-teal {
+    color: #548687
+}
+
+.text-theme-red {
+    color: #b0413e
+}
+
+.text-theme-brown {
+    color: #473335
+}
+
+.carousel-size {
+    height: 50%;
+}
+
+.Collapsible {
+    font-size: 24px;
+}
+
+.trigger-opened {
+    font-weight: bold;
+}
+
+.trigger-bold {
+    font-weight: bold;
+}
+
+.sponsorship-outer {
+    background-color: #548687;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.focus-bundle-outer {
+    background-color: #fcaa67;
+    color: white;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.itemized-sponsorship-outer {
+    background-color: #b0413e;
+    color: white;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.opened-content {
+    background-color: white;
+    color: black;
+}
+
+.opened-sub-content-content {
+    background-color: #e0e0e0;
+    font-size: large;
+}
+
+.sponsor-package-describe {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.gold-bg {
+    background-color: #fcaa67;
+}
+
+.blue-bg {
+    background-color: #548687;
+}
+
+.Collapsible__trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Collapsible__trigger.is-open svg {
+    transform: rotate(180deg);
+}
+
+.date-announce-blue {
+    background-color: #54868760;
+    padding: 5px;
+    /* color: white; */
+    width: 100%;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-announce-yellow {
+    background-color: #fcaa6760;
+    padding: 5px;
+    /* color: white; */
+    width: 100%;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
